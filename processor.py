@@ -1,4 +1,4 @@
-# import os
+import os
 import openpyxl
 from tabulate import tabulate
 
@@ -7,7 +7,7 @@ from opening import Opening
 from credit import Credit
 from debit import Debit
 
-cwd = "c:\dev\workspace\python_training"
+cwd = os.getcwd()
 path = f"{cwd}\day_3_assignment_input.xlsx"
 
 wb_obj = openpyxl.load_workbook(path)
